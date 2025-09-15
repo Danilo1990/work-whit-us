@@ -9,7 +9,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
-Descrizione dettagliata del tuo plugin. Qui puoi includere caratteristiche, funzioni e obiettivi.
+Aggiunge a Elementor un widget personalizzato chiamato “Gli Annunci”, pensato per gestire e mostrare annunci provenienti da un Custom Post Type (annuncio).
 
 == Installation ==
 1. Carica il plugin nella cartella `/wp-content/plugins/`
