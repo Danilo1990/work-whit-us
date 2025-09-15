@@ -1195,30 +1195,28 @@ class Widget_All_Annunci extends \Elementor\Widget_Base {
 			];
 		}
 
-		// Filtro Luogo (custom field)
+		// Filtro contratto 
 		if ($selected_contract) {
 			$args['meta_query'][] = [
 				'key'     => '_annuncio_contract',
 				'value'   => $selected_contract,
-				'compare' => 'LIKE', // oppure '=' se è un singolo valore
+				'compare' => 'LIKE', 
 			];
 		}
 
-		// Filtro Luogo (custom field)
+		// Filtro Luogo
 		if ($selected_luogo) {
 			$args['meta_query'][] = [
 				'key'     => '_annuncio_luogo',
 				'value'   => $selected_luogo,
-				'compare' => 'LIKE', // oppure '=' se è un singolo valore
+				'compare' => 'LIKE', 
 			];
 		}
 
 		$query = new \WP_Query($args);
 
-		// Inizializza l'output
 		$output = '';
 
-		// Se ci sono i filtri, costruisci il form
 		if ($showFilter === 'yes') {
 			$output .= '<form method="GET" class="annunci-filter-form">';
 
@@ -1285,7 +1283,6 @@ class Widget_All_Annunci extends \Elementor\Widget_Base {
 		
 		}
 
-		// Costruzione wrapper annunci
 		$wrapper_classes = ['annunci-wrapper'];
 		$wrapper_style = '';
 
