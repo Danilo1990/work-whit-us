@@ -89,7 +89,6 @@ function wws_annuncio_postazione_callback($post) {
     wp_nonce_field('wws_annuncio_save_meta', 'wws_annuncio_nonce');
     $values = get_post_meta($post->ID, '_annuncio_postazione', true);
 
-    // Se il valore non è un array (per retrocompatibilità), lo trasformiamo in array
     if (!is_array($values)) {
         $values = !empty($values) ? array($values) : array();
     }
